@@ -1,0 +1,11 @@
+.hero {
+  img {
+    @apply w-full h-screen;
+  }
+  h1 {
+    @apply text-6xl;
+  }
+  h6 {
+    @apply mt-5;
+  }
+}

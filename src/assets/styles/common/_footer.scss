@@ -1,0 +1,116 @@
+.footer {
+  @apply bg-no-repeat bg-blue-500 bg-cover;
+  background-position: center center;
+  &__container {
+    @apply container;
+  }
+  &__wrapper {
+    @apply grid gap-4 grid-cols-12;
+    &__single-footer {
+      @apply mb-7;
+      h2 {
+        @apply text-4xl mb-5;
+        a {
+          @apply text-blue-500;
+        }
+      }
+      h3 {
+        @apply text-2xl text-blue-500 mb-7;
+      }
+      ul {
+        li {
+          @apply mb-3 text-base;
+          a {
+            @apply inline-block text-white font-normal relative;
+            &:hover {
+              @apply text-blue-500;
+            }
+            &:before {
+              @apply absolute left-0 bottom-0 w-0 h-px bg-blue-500;
+              content: "";
+              transition: var(--transition);
+            }
+          }
+          &:last-child {
+            @apply mb-0;
+          }
+        }
+      }
+    }
+  }
+}
+
+.footer__wrapper__single-footer .footer-information {
+  @apply pl-0 mb-5;
+  li {
+    @apply text-base text-white font-normal mb-3;
+    &:last-child {
+      @apply mb-0;
+    }
+    span {
+      @apply font-bold;
+    }
+    a {
+      @apply text-white font-normal;
+      &:hover {
+        @apply text-blue-500;
+      }
+    }
+  }
+}
+
+.footer__wrapper__single-footer .share-link a {
+  @apply text-center items-center justify-center flex bg-white mr-1 relative text-base;
+  width: 35px;
+  height: 35px;
+  color: var(--paragraphColor);
+  border-radius: 50%;
+  line-height: 40px;
+  &:last-child {
+    @apply mr-0;
+  }
+  &:hover {
+    @apply bg-blue-500 text-white;
+  }
+}
+
+.footer__wrapper__single-footer ul li a:hover::before {
+  @apply w-full;
+}
+
+.footer__wrapper__single-footer .newsletter-form {
+  @apply relative mt-4;
+  button {
+    @apply border-0 absolute text-white bg-blue-500;
+    top: 4.5px;
+    right: 4.5px;
+    height: 46px;
+    font-size: 18px;
+    padding: 0 25px;
+    line-height: 46px;
+  }
+}
+
+.footer__wrapper__single-footer .newsletter-form .input-newsletter {
+  @apply bg-white text-blue-500 border border-gray-200 pl-4 block w-full;
+  transition: var(--transition);
+  height: 55px;
+}
+
+.copyright-area {
+  @apply py-8;
+  border: 1px solid rgba(72, 102, 131, 0.15);
+  margin-top: 75px;
+  &__content {
+    @apply text-center;
+    p {
+      @apply text-white text-base;
+      a {
+        @apply inline-block font-bold text-blue-500;
+        &:hover {
+          @apply text-white;
+        }
+      }
+    }
+  }
+}
