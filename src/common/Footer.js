@@ -21,7 +21,7 @@ const Footer = () => {
       <div className="footer__container">
         <div className="footer__wrapper">
           <div className="footer__wrapper__single-footer lg:col-span-3 md:col-span-6 col-span-6">
-            <h3 className="widget_title">Travelers</h3>
+            <h3 className="widget_title">Travelers Blogs</h3>
             <ul className="footer-information">
               <li>
                 <span>Location: </span>
@@ -65,7 +65,7 @@ const Footer = () => {
                   <a href="#">Our Services</a>
                 </li>
                 <li id="menu-item-677" className="menu-item  menu-item-677">
-                  <a href="#">Appointment</a>
+                  <a href="#">Account</a>
                 </li>
                 <li id="menu-item-676" className="menu-item  menu-item-676">
                   <a href="#">Privacy Policy</a>
@@ -77,38 +77,38 @@ const Footer = () => {
             </div>
           </div>
           <div className="footer__wrapper__single-footer widget_nav_menu lg:col-span-2 md:col-span-6 col-span-6">
-            <h3 className="widget_title">Our Services</h3>
+            <h3 className="widget_title">Travel</h3>
             <div className="menu-our-services-container">
               <ul id="menu-our-services" className="menu">
                 <li
                   id="menu-item-1116"
                   className="menu-item  menu-item-object-service menu-item-1116"
                 >
-                  <a href="#">Cosmetic Dentistry</a>
+                  <a href="#">Categories</a>
                 </li>
                 <li
                   id="menu-item-1117"
                   className="menu-item  menu-item-object-service menu-item-1117"
                 >
-                  <a href="#">General Dentistry</a>
+                  <a href="#">List</a>
                 </li>
                 <li
                   id="menu-item-1118"
                   className="menu-item  menu-item-object-service menu-item-1118"
                 >
-                  <a href="#">Certified Dentist</a>
+                  <a href="#">Single Slider</a>
                 </li>
                 <li
                   id="menu-item-1119"
                   className="menu-item  menu-item-object-service menu-item-1119"
                 >
-                  <a href="#">New Technology</a>
+                  <a href="#">Single Gallery</a>
                 </li>
                 <li
                   id="menu-item-1120"
                   className="menu-item  menu-item-object-service menu-item-1120"
                 >
-                  <a href="#">Accept Insurance</a>
+                  <a href="#">Map</a>
                 </li>
               </ul>
             </div>
@@ -118,7 +118,7 @@ const Footer = () => {
             <div className="menu-support-container">
               <ul id="menu-support" className="menu">
                 <li id="menu-item-1132" className="menu-item  menu-item-1132">
-                  <a href="#">Our Dentist</a>
+                  <a href="#">Our Travelers</a>
                 </li>
                 <li id="menu-item-1129" className="menu-item  menu-item-1129">
                   <a href="#">Terms of Services</a>
@@ -136,7 +136,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="footer__wrapper__single-footer  lg:col-span-3 md:col-span-6 col-span-12">
-            <h3 className="widget_title">Newsletter</h3>
+            <h3 className="widget_title">News Letter</h3>
             <div className="widget-newsletter">
               <div className="newsletter-content">
                 <p>
