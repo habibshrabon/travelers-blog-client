@@ -1,6 +1,6 @@
 import React from "react";
-// import { FaLongArrowAltRight } from "react-icons/fa";
 import Carousel from "react-multi-carousel";
+// import { FaLongArrowAltRight } from "react-icons/fa";
 
 const responsive = {
   desktop: {
@@ -21,9 +21,9 @@ const responsive = {
 };
 const images = [
   "https://i.ibb.co/MnJ0tsn/banner-1.jpg",
-  // "https://i.ibb.co/MGy27gv/new-1.jpg",
+  "https://i.ibb.co/MGy27gv/new-1.jpg",
   // "https://i.ibb.co/Y2j3QV5/traveling-3.jpg",
-  // "https://i.ibb.co/sVbMrY6/traveling-4.jpg",
+  "https://i.ibb.co/sVbMrY6/traveling-4.jpg",
   // "https://i.ibb.co/Hn5nzRT/traveling-2.jpg",
   // "https://i.ibb.co/b2Ywf3Q/traveling-1.jpgg",
 ];
@@ -41,7 +41,7 @@ const Hero = ({ deviceType, infinite, autoPlay }) => {
       infinite={infinite}
       containerClass="carousel-container"
       autoPlay={autoPlay}
-      autoPlaySpeed={1000}
+      autoPlaySpeed={5000}
     >
       {images.map((image, index) => {
         return (
