@@ -151,11 +151,11 @@ const Blogs = () => {
                 <div className="widget_tag_cloud">
                   <h3 className="">Tags</h3>
                   <div className="widget_tag_cloud__wrapper">
-                    <a href="#">Business</a>
-                    <a href="#">Health</a>
-                    <a href="#">Privacy</a>
-                    <a href="#">Technology</a>
-                    <a href="#">Tips</a>
+                    <a href="#">CITY</a>
+                    <a href="#">DESTINATION</a>
+                    <a href="#">FRANCE</a>
+                    <a href="#">TOUR</a>
+                    <a href="#">TRAVELS</a>
                   </div>
                 </div>
               </div>

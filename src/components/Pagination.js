@@ -10,7 +10,7 @@ const Pagination = ({ postsPerPage, totalPosts, paginate }) => {
 
   return (
     <nav>
-      <ul className="flex justify-center gap-2">
+      <ul className="flex justify-center gap-2 pb-5">
         {pageNumbers.map((number) => (
           <li
             key={number}
