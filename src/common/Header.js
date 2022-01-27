@@ -116,11 +116,16 @@ const Header = () => {
                       <BiUserCircle />
                     </i>
                   </Link>
-                  <span className="pl-2">{user.displayName}</span>
+                  <span className="pl-2 font-bold text-blue-500">
+                    {user.displayName}
+                  </span>
                 </div>
                 <div className="option-item">
                   {user.email ? (
-                    <Link onClick={logout} className="default-btn">
+                    <Link
+                      onClick={logout}
+                      className="default-btn text-red-500 font-bold"
+                    >
                       Log Out
                     </Link>
                   ) : (

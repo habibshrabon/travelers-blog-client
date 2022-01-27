@@ -4,9 +4,11 @@ import Footer from "./common/Footer";
 import Header from "./common/Header";
 import AuthProvider from "./context/AuthProvider";
 import Home from "./pages/Home/Home";
+import PrivateRoute from "./pages/PrivateRoute/PrivateRoute";
 import Login from "./pages/Register/Login";
 import Register from "./pages/Register/Register";
 import SingleBlog from "./pages/SingleBlog";
+import Write from "./pages/Write";
 
 const AppRouter = () => {
   return (
@@ -21,9 +23,12 @@ const AppRouter = () => {
             <Route path="/home">
               <Home />
             </Route>
-            <Route path="/singleBlog/:id">
-              <SingleBlog />
+            <Route path="/write">
+              <Write />
             </Route>
+            <PrivateRoute path="/singleBlog/:id">
+              <SingleBlog />
+            </PrivateRoute>
             <Route path="/register">
               <Register />
             </Route>

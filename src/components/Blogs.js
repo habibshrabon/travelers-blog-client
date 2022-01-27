@@ -14,7 +14,7 @@ const Blogs = () => {
   const [blogs, setBlogs] = useState([]);
 
   useEffect(() => {
-    fetch("/blogs.json")
+    fetch("http://localhost:5000/blogs")
       .then((res) => res.json())
       .then((data) => setBlogs(data));
   }, []);
@@ -137,12 +137,12 @@ const Blogs = () => {
                   <div className="flex gap-4 mt-6">
                     <img
                       className="rounded-full w-14 h-14"
-                      src="https://themes.hibootstrap.com/rola/wp-content/uploads/2021/07/review-2.jpg"
+                      src="https://i.ibb.co/q11CTCT/DSC-0191.jpg"
                       alt="Author Image Link"
                     />
                     <div>
                       <h3 className="mb-2 font-bold text-blue-500">
-                        Sarah Taylor
+                        Ahsan Habib
                       </h3>
                       <span className="text-gray-600">Tour &amp; Travels</span>
                     </div>

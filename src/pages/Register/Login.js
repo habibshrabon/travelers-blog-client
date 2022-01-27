@@ -84,13 +84,15 @@ const Login = () => {
           </label>
           <div className="tracking-wide text-gray-900">
             <Link to="#">
-              <a className="border-b border-blue-600">Forgot Password?</a>
+              <a className="border-b border-blue-600 text-blue-600">
+                Forgot Password?
+              </a>
             </Link>
           </div>
           <span className="w-full">
             <input
               type="submit"
-              className="btn-brand text-white rounded bg-blue-600"
+              className="btn-brand text-white rounded bg-blue-600 mt-5"
               value="Log in now"
             />
           </span>
@@ -106,7 +108,10 @@ const Login = () => {
       </div>
       <div className="login__google-btn">
         <h5>OR</h5>
-        <button onClick={handleGoogleLogin} className=" default-btn">
+        <button
+          onClick={handleGoogleLogin}
+          className="px-8 py-3 bg-blue-500 hover:bg-blue-500 text-white rounded"
+        >
           Sign in with Google
         </button>
       </div>
