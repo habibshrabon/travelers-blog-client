@@ -1,21 +1,21 @@
 import React from "react";
 
 const Blog = ({ blog }) => {
-  const { name, description, title, img, cost, location, date, slug, ratings } =
+  const { name, description, title, img, cost, location, date, id, ratings } =
     blog;
   return (
     <>
       <div className="md:col-span-4 col-span-6">
         <div className="single-services">
           <div className="services-image">
-            <a href={`serviceDetails/${slug}`}>
+            <a href={`serviceDetails/${id}`}>
               <img src={img} alt={name} />
             </a>
           </div>
           <div className="services-content">
             <h4 className="text-cente">{location}</h4>
             <h3>
-              <a href={`serviceDetails/${slug}`}>{title}</a>
+              <a href={`serviceDetails/${id}`}>{title}</a>
             </h3>
             <div className="text-justify">
               <span>{date}</span> | <span>{name} </span>|{" "}
@@ -23,7 +23,7 @@ const Blog = ({ blog }) => {
             </div>
             <h4 className="text-justify">Package Rate:{cost}</h4>
             <p className="text-justify">{description}</p>
-            <a href={`serviceDetails/${slug}`} className="services-btn">
+            <a href={`serviceDetails/${id}`} className="services-btn">
               Read More
             </a>
           </div>

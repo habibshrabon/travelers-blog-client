@@ -1,6 +1,6 @@
 .single-services {
-  @apply mb-4;
-  transition: var(--transition);
+  @apply mb-4 shadow-lg;
+  transition: 0.6s;
 }
 
 .single-services .services-image {
@@ -9,11 +9,11 @@
     border-radius: 5px 5px 0 0;
   }
   &__style {
-    background-color: var(--whiteColor);
+    background-color: white;
     // box-shadow: 0 0 1.25rem rgb(108 118 134 / 10%);
     // padding: 25px;
     border-radius: 0 0 5px 5px px;
-    transition: var(--transition);
+    transition: 0.6s;
     &:hover {
       transform: translateY(-5px);
     }
@@ -26,12 +26,12 @@
 .single-services .services-image .icon {
   @apply absolute right-4;
   bottom: -15px;
-  transition: var(--transition);
+  transition: 0.6s;
   a {
     @apply inline-block w-14 h-14 bg-white;
     box-shadow: 0 10px 30px #00000012;
     border-radius: 50px;
-    transition: var(--transition);
+    transition: 0.6s;
     img {
       @apply w-14 h-14 rounded-full p-1;
     }
@@ -42,7 +42,7 @@
   @apply bg-white p-6;
   box-shadow: 0 0 1.25rem #6c76861a;
   border-radius: 0 0 5px 5px;
-  transition: var(--transition);
+  transition: 0.6s;
   h3 {
     @apply mb-3 font-medium;
     font-size: 24px;
@@ -53,6 +53,39 @@
         @apply text-gray-500;
       }
     }
+  }
+}
+
+.search-field {
+  @apply w-full block;
+  background: #f7fafb;
+  border: 1px solid #dfedee;
+  height: 50px;
+  padding: 8px 15px;
+  outline: 0;
+  transition: 0.6s;
+  border-radius: 5px;
+  color: var(--paragraphColor);
+}
+
+.search-field:focus {
+  @apply bg-blue-500;
+}
+
+.blog-sidebar ul.cus_widget_categories li {
+  @apply relative overflow-hidden mb-3 text-base font-semibold pl-0;
+  color: var(--paragraphColor);
+  border-top: 1px solid #dfedee;
+  border-bottom: 1px solid #dfedee;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  &:before {
+    display: none;
+  }
+  a {
+    color: var(--paragraphColor);
+    display: inline-block;
+    text-transform: capitalize;
   }
 }
 
@@ -67,4 +100,122 @@
 
 .single-services:hover .services-image .icon a {
   @apply bg-yellow-500;
+}
+
+.all-blog {
+  @apply container section-padding;
+  &__title {
+    @apply container flex justify-center;
+    &__content {
+      @apply text-center;
+      max-width: 665px;
+      margin: 0 auto 45px;
+      h2 {
+        @apply mb-0 font-normal leading-snug;
+        font-size: 38px !important;
+      }
+    }
+  }
+}
+
+.single-blog-post {
+  @apply mb-8;
+  transition: 0.6s;
+  &:hover {
+    transform: translateY(-5px);
+  }
+}
+
+.single-blog-post .entry-thumbnail {
+  @apply relative;
+}
+
+.single-blog-post .entry-thumbnail .tag {
+  @apply absolute right-4 bg-blue-500 text-white;
+  bottom: -10px;
+  padding: 5px 15px;
+  border-radius: 30px;
+}
+
+.single-blog-post .post-content {
+  @apply relative p-6 border-b-2 border-blue-300;
+  box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.1);
+  border-radius: 0 0 10px 10px;
+  h3 {
+    @apply mb-0 relative capitalize;
+    line-height: 1.4;
+    word-wrap: break-word;
+    font-size: 25px;
+    margin-top: -5px;
+    a {
+      @apply block;
+    }
+  }
+  p {
+    @apply mt-3 mb-0;
+  }
+}
+
+.info-item {
+  @apply bg-white p-6 relative;
+  border-radius: 5px;
+  box-shadow: 1px 2px 13px rgba(16, 166, 179, 0.08);
+  z-index: 1;
+  transition: 0.6s;
+  &:hover {
+    @apply bg-blue-500;
+    &:before {
+      @apply bg-blue-500;
+    }
+    .info-item__rating svg {
+      @apply text-white;
+    }
+    p {
+      @apply text-white;
+    }
+  }
+  &:before {
+    @apply left-6 w-8 absolute bg-white;
+    content: "";
+    z-index: -1;
+    height: 20px;
+    bottom: -18px;
+    transition: 0.6s;
+    box-shadow: 1px 2px 13px rgba(16, 166, 179, 0.08);
+    clip-path: polygon(0 0, 50% 100%, 100% 0);
+  }
+  p {
+    transition: 0.6s;
+  }
+
+  &__rating {
+    @apply flex;
+    svg {
+      @apply text-yellow-500 text-xl;
+    }
+  }
+}
+
+.widget_tag_cloud {
+  h3 {
+    @apply my-5 text-xl font-bold;
+    font-size: 22px !important;
+  }
+  &__wrapper {
+    @apply flex flex-wrap gap-2;
+  }
+  a {
+    @apply border border-gray-300 rounded p-2;
+    &:hover {
+      @apply bg-blue-500;
+    }
+  }
+}
+
+.sidebar-blog {
+  &__title {
+    @apply mb-3;
+    font-size: 22px !important;
+    font-weight: 700 !important;
+  }
 }

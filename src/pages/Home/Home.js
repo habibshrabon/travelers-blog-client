@@ -5,7 +5,7 @@ import Hero from "../../components/Hero";
 const Home = () => {
   return (
     <div>
-      <Hero />
+      <Hero infinite="true" autoPlay="true" deviceType="desktop" />
       <Blogs />
     </div>
   );
