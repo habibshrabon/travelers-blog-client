@@ -4,8 +4,12 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Blog from "../common/Blog";
 import { BsStarFill } from "react-icons/bs";
+import Pagination from "./Pagination";
 
 const Blogs = () => {
+  const [currentPage, setCurrentPage] = useState(1);
+  const [postsPerPage] = useState(9);
+
   const [blogs, setBlogs] = useState([]);
 
   useEffect(() => {
@@ -13,6 +17,14 @@ const Blogs = () => {
       .then((res) => res.json())
       .then((data) => setBlogs(data));
   }, []);
+
+  // Get current posts
+  const indexOfLastPost = currentPage * postsPerPage;
+  const indexOfFirstPost = indexOfLastPost - postsPerPage;
+  const currentPosts = blogs.slice(indexOfFirstPost, indexOfLastPost);
+
+  // Change page
+  const paginate = (pageNumber) => setCurrentPage(pageNumber);
   return (
     <div className="container">
       <h2 className="text-center my-5">
@@ -21,9 +33,17 @@ const Blogs = () => {
       <div className="grid grid-cols-12 gap-4">
         <div className="md:col-span-9 col-span-6">
           <div className="grid grid-cols-12 gap-4">
-            {blogs.map((blog) => (
+            {currentPosts.map((blog) => (
               <Blog key={blog.id} blog={blog}></Blog>
             ))}
+
+            <div>
+              <Pagination
+                postsPerPage={postsPerPage}
+                totalPosts={blogs.length}
+                paginate={paginate}
+              />
+            </div>
           </div>
         </div>
         <div className="md:col-span-3">
@@ -83,7 +103,7 @@ const Blogs = () => {
                 </div>
                 <div className="sidebar-blog">
                   <h3 className="sidebar-blog__title">Recent Posts</h3>
-                  {blogs.map((blog) => (
+                  {blogs.slice(0, 4).map((blog) => (
                     <div className="grid grid-cols-12 gap-4 mb-2 border-b border-b-gray-200">
                       <div className="col-span-3 ">
                         <img className="rounded" src={blog.img} />

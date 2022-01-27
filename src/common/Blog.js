@@ -22,8 +22,11 @@ const Blog = ({ blog }) => {
               <span>Ratings: {ratings}</span>
             </div>
             <h4 className="text-justify">Package Rate:{cost}</h4>
-            <p className="text-justify">{description}</p>
-            <a href={`singleBlog/${id}`} className="services-btn">
+            <p className="text-justify mb-4">{description}</p>
+            <a
+              href={`singleBlog/${id}`}
+              className=" py-3 px-8 font-bold rounded bg-blue-500 hover:bg-blue-600 text-white mt-4"
+            >
               Read More
             </a>
           </div>

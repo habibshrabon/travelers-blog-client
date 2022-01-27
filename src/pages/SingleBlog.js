@@ -84,7 +84,7 @@ const SingleBlog = () => {
               </Link>
             </li>
           </ul>
-          <button className="py-3 px-8 font-bold rounded bg-blue-400 hover:bg-blue-600 text-white mt-4">
+          <button className="py-3 px-8 font-bold rounded bg-blue-500 hover:bg-blue-600 text-white mt-4">
             Checkout
           </button>
         </div>
@@ -120,7 +120,7 @@ const SingleBlog = () => {
                 />
                 <br />
                 <button
-                  className="py-3 px-8 font-bold rounded bg-blue-400 hover:bg-blue-600 text-white mt-4"
+                  className="py-3 px-8 font-bold rounded bg-blue-500 hover:bg-blue-600 text-white mt-4"
                   type="submit"
                 >
                   Submit
