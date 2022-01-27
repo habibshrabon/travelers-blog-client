@@ -116,7 +116,7 @@ const Header = () => {
                       <BiUserCircle />
                     </i>
                   </Link>
-                  <span className="pl-2 font-bold text-blue-500">
+                  <span className="pl-2 font-bold text-orange-500">
                     {user.displayName}
                   </span>
                 </div>

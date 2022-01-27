@@ -6,6 +6,13 @@ import { Link } from "react-router-dom";
 import Blog from "../common/Blog";
 import { BsStarFill } from "react-icons/bs";
 import Pagination from "./Pagination";
+import {
+  FaFacebookF,
+  FaLinkedinIn,
+  FaPinterestP,
+  FaTwitter,
+  FaWhatsapp,
+} from "react-icons/fa";
 
 const Blogs = () => {
   const [currentPage, setCurrentPage] = useState(1);
@@ -73,7 +80,7 @@ const Blogs = () => {
                     </button>
                   </form>
                 </div>
-                <div id="rola_cats-3" className="widget widget_rola_cats">
+                <div id="#" className="widget widget_rola_cats mb-12">
                   <h3 className="widget-title">Category</h3>
                   <ul className="cus_widget_categories">
                     <li>
@@ -102,7 +109,7 @@ const Blogs = () => {
                     </li>
                   </ul>
                 </div>
-                <div className="sidebar-blog">
+                <div className="sidebar-blog mb-12">
                   <h3 className="sidebar-blog__title">Recent Posts</h3>
                   {blogs.slice(0, 4).map((blog) => (
                     <div className="grid grid-cols-12 gap-4 mb-2 border-b border-b-gray-200">
@@ -118,7 +125,16 @@ const Blogs = () => {
                     </div>
                   ))}
                 </div>
-
+                <div className="widget_tag_cloud mb-12">
+                  <h3 className="">Tags</h3>
+                  <div className="widget_tag_cloud__wrapper">
+                    <a href="#">CITY</a>
+                    <a href="#">DESTINATION</a>
+                    <a href="#">FRANCE</a>
+                    <a href="#">TOUR</a>
+                    <a href="#">TRAVELS</a>
+                  </div>
+                </div>
                 <div className="quote-info-box">
                   <div className="info-item">
                     <div className="info-item__rating">
@@ -144,18 +160,43 @@ const Blogs = () => {
                       <h3 className="mb-2 font-bold text-blue-500">
                         Ahsan Habib
                       </h3>
-                      <span className="text-gray-600">Tour &amp; Travels</span>
+                      <span className="text-orange-600">
+                        Subscribe & Follow
+                      </span>
+                      <ul className="flex gap-2 mt-4">
+                        <li className="flex items-center justify-center w-8 h-8 bg-blue-900 rounded-full hover:bg-blue-800">
+                          <Link
+                            target="_blank"
+                            to="https://www.facebook.com/habib.sharabon"
+                          >
+                            <FaFacebookF className="text-xl text-white" />
+                          </Link>
+                        </li>
+                        <li className="flex items-center justify-center w-8 h-8 bg-blue-500 rounded-full hover:bg-blue-400">
+                          <Link to="#">
+                            <FaTwitter className="text-xl text-white" />
+                          </Link>
+                        </li>
+                        <li className="flex items-center justify-center w-8 h-8 bg-blue-600 rounded-full hover:bg-blue-700">
+                          <Link
+                            target="_blank"
+                            to="https://www.linkedin.com/in/sn-habib/"
+                          >
+                            <FaLinkedinIn className="text-xl text-white" />
+                          </Link>
+                        </li>
+                        <li className="flex items-center justify-center w-8 h-8 bg-red-600 rounded-full hover:bg-red-500">
+                          <Link to="#" target="_blank">
+                            <FaPinterestP className="text-xl text-white" />
+                          </Link>
+                        </li>
+                        <li className="flex items-center justify-center w-8 h-8 bg-green-600 rounded-full hover:bg-green-500">
+                          <Link to="#" target="_blank">
+                            <FaWhatsapp className="text-xl text-white" />
+                          </Link>
+                        </li>
+                      </ul>
                     </div>
-                  </div>
-                </div>
-                <div className="widget_tag_cloud">
-                  <h3 className="">Tags</h3>
-                  <div className="widget_tag_cloud__wrapper">
-                    <a href="#">CITY</a>
-                    <a href="#">DESTINATION</a>
-                    <a href="#">FRANCE</a>
-                    <a href="#">TOUR</a>
-                    <a href="#">TRAVELS</a>
                   </div>
                 </div>
               </div>
