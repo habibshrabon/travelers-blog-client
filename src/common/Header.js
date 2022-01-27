@@ -15,7 +15,7 @@ const Header = () => {
           <div className="main-responsive-menu">
             <h1>
               <Link className="navbar-brand" to="/">
-                Exploore
+                Travelers Blogs
               </Link>
             </h1>
           </div>
@@ -26,7 +26,7 @@ const Header = () => {
           <nav className="flex items-center justify-between">
             <h1 className="text-4xl font-bold">
               <Link className="navbar-brand" to="/">
-                Exploore
+                Travelers Blogs
               </Link>
             </h1>
             <div className="flex items-center  mean-menu">
@@ -38,7 +38,7 @@ const Header = () => {
                 </li>
                 <li className="menu-item  dropdown nav-item">
                   <Link title="Dentist" to="write" className="nav-link">
-                    Write Blog
+                    Blog
                   </Link>
                 </li>
                 <li className="menu-item  dropdown nav-item">
