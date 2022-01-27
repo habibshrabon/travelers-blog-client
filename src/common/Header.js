@@ -2,113 +2,132 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 import { BiUserCircle } from "react-icons/bi";
+import { Link } from "react-router-dom";
+import useAuth from "../hooks/useAuth";
 
 const Header = () => {
+  const { user, logout } = useAuth();
+  console.log(user);
   return (
     <div className="navbar-area">
       <div className="main-responsive-nav">
         <div className="container">
           <div className="main-responsive-menu">
             <h1>
-              <a className="navbar-brand" href="/">
-                Travelers
-              </a>
+              <Link className="navbar-brand" to="/">
+                Exploore
+              </Link>
             </h1>
           </div>
         </div>
       </div>
       <div className="main-navbar">
         <div className="container">
-          <nav className="flex items-center justify-between main-navbar__navbar navbar-expand-md navbar-light">
-            <h1>
-              <a className="navbar-brand" href="/">
-                Travelers
-              </a>
+          <nav className="flex items-center justify-between">
+            <h1 className="text-4xl font-bold">
+              <Link className="navbar-brand" to="/">
+                Exploore
+              </Link>
             </h1>
             <div className="flex items-center  mean-menu">
               <ul className="flex ml-auto navbar-nav">
                 <li className="menu-item  dropdown active nav-item">
-                  <a title="Home" href="/home" className="nav-link">
+                  <Link title="Home" to="/home" className="nav-link">
                     Home
-                  </a>
+                  </Link>
                 </li>
                 <li className="menu-item  dropdown nav-item">
-                  <a title="Blogs" href="#" className="nav-link">
-                    Blogs
-                  </a>
+                  <Link title="Dentist" to="write" className="nav-link">
+                    Write Blog
+                  </Link>
                 </li>
                 <li className="menu-item  dropdown nav-item">
-                  <a title="Pages" href="#" className="nav-link">
+                  <Link title="Services" to="#" className="nav-link">
                     Pages
-                  </a>
+                  </Link>
                   <ul className="dropdown-menu" role="menu">
                     <li className="menu-item nav-item">
-                      <a title="About Us" href="#" className="dropdown-item">
+                      <Link
+                        title="About Us"
+                        to="allService"
+                        className="dropdown-item"
+                      >
                         About Us
-                      </a>
+                      </Link>
                     </li>
-                    <li className="menu-item nav-item">
-                      <a title="Pricing" href="#" className="dropdown-item">
+                    <li className="menu-item menu-item-object-service nav-item">
+                      <Link
+                        title="Single Service"
+                        to="#"
+                        className="dropdown-item"
+                      >
+                        Events
+                      </Link>
+                    </li>
+                    <li className="menu-item menu-item-object-service nav-item">
+                      <Link
+                        title="Single Service"
+                        to="#"
+                        className="dropdown-item"
+                      >
                         Pricing
-                      </a>
+                      </Link>
                     </li>
-                    <li className="menu-item nav-item">
-                      <a
-                        title="Testimonials"
-                        href="#"
+                    <li className="menu-item menu-item-object-service nav-item">
+                      <Link
+                        title="Single Service"
+                        to="#"
                         className="dropdown-item"
                       >
-                        Testimonials
-                      </a>
+                        Privacy & Policy
+                      </Link>
                     </li>
-                    <li className="menu-item nav-item">
-                      <a title="FAQ’s" href="#" className="dropdown-item">
-                        FAQ’s
-                      </a>
-                    </li>
-                    <li className="menu-item nav-item">
-                      <a
-                        title="Privacy Policy"
-                        href="#"
+                    <li className="menu-item menu-item-object-service nav-item">
+                      <Link
+                        title="Single Service"
+                        to="#"
                         className="dropdown-item"
                       >
-                        Privacy Policy
-                      </a>
+                        Terms & Services
+                      </Link>
                     </li>
-                    <li className="menu-item nav-item">
-                      <a
-                        title="Terms of Services"
-                        href="#"
+                    <li className="menu-item menu-item-object-service nav-item">
+                      <Link
+                        title="Single Service"
+                        to="#"
                         className="dropdown-item"
                       >
-                        Terms of Services
-                      </a>
-                    </li>
-                    <li className="menu-item nav-item">
-                      <a title="Coming Soon" href="#" className="dropdown-item">
                         Coming Soon
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </li>
+
                 <li className="menu-item nav-item">
-                  <a title="Contact Us" href="#" className="nav-link">
+                  <Link title="Contact Us" to="#" className="nav-link">
                     Contact Us
-                  </a>
+                  </Link>
                 </li>
               </ul>
               <div className="flex items-center others-options">
                 <div className="option-item">
-                  <a className="search-box" href="#">
+                  <Link className="search-box inline-block" to="#">
                     <i>
                       <BiUserCircle />
                     </i>
-                  </a>
+                  </Link>
+                  <span className="pl-2">{user.displayName}</span>
                 </div>
                 <div className="option-item">
-                  <a href="#" className="default-btn">
-                    Login
-                  </a>
+                  {user.email ? (
+                    <Link onClick={logout} className="default-btn">
+                      Log Out
+                    </Link>
+                  ) : (
+                    <Link to="login" className="default-btn">
+                      Register
+                    </Link>
+                  )}
                 </div>
               </div>
             </div>
@@ -128,16 +147,16 @@ const Header = () => {
             <div className="option-inner">
               <div className="flex items-center others-options">
                 <div className="option-item">
-                  <a className="search-box" href="#">
+                  <Link className="search-box" to="#">
                     <i>
                       <BiUserCircle />
                     </i>
-                  </a>
+                  </Link>
                 </div>
                 <div className="option-item">
-                  <a href="#" className="default-btn">
-                    Login
-                  </a>
+                  <Link to="#" className="default-btn">
+                    Register
+                  </Link>
                 </div>
               </div>
             </div>

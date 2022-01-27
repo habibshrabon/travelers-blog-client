@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/img-redundant-alt */
 /* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useEffect, useState } from "react";
@@ -140,7 +141,7 @@ const Blogs = () => {
                       alt="Author Image Link"
                     />
                     <div>
-                      <h3 className="mb-2 font-bold text-java-500">
+                      <h3 className="mb-2 font-bold text-blue-500">
                         Sarah Taylor
                       </h3>
                       <span className="text-gray-600">Tour &amp; Travels</span>
