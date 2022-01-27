@@ -8,14 +8,14 @@ const Blog = ({ blog }) => {
       <div className="md:col-span-4 col-span-6">
         <div className="single-services">
           <div className="services-image">
-            <a href={`serviceDetails/${id}`}>
+            <a href={`singleBlog/${id}`}>
               <img src={img} alt={name} />
             </a>
           </div>
           <div className="services-content">
             <h4 className="text-cente">{location}</h4>
             <h3>
-              <a href={`serviceDetails/${id}`}>{title}</a>
+              <a href={`singleBlog/${id}`}>{title}</a>
             </h3>
             <div className="text-justify">
               <span>{date}</span> | <span>{name} </span>|{" "}
@@ -23,7 +23,7 @@ const Blog = ({ blog }) => {
             </div>
             <h4 className="text-justify">Package Rate:{cost}</h4>
             <p className="text-justify">{description}</p>
-            <a href={`serviceDetails/${id}`} className="services-btn">
+            <a href={`singleBlog/${id}`} className="services-btn">
               Read More
             </a>
           </div>

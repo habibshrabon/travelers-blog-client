@@ -139,7 +139,7 @@ const Footer = () => {
             <h3 className="widget_title">News Letter</h3>
             <div className="widget-newsletter">
               <div className="newsletter-content">
-                <p>
+                <p className="text-white">
                   Best solution for your it startup business
                   consecteturadipiscing elit.
                 </p>

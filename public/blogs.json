@@ -5,7 +5,7 @@
       "name": "Ahsan",
       "date": "26-jan-2022",
       "ratings": "5",
-      "title": "Video Post",
+      "title": "travel with your partner is best thing in life",
       "cost": "10000",
       "description": "We are use medication to help patients relax during dental procedures. ",
       "img": "https://i.ibb.co/8BFRh6j/new-york.jpg"
@@ -16,54 +16,76 @@
       "name": "Ahsan",
       "date": "26-jan-2022",
       "ratings": "5",
-      "title": "Video Post",
-      "cost": "10000",
+      "title": "travel with your partner is best thing in life",
+      "cost": "20000",
       "description": "We are use medication to help patients relax during dental procedures. ",
-      "img": "https://i.ibb.co/8BFRh6j/new-york.jpg"
+      "img": "https://i.ibb.co/B34Sskg/IMG-1.jpg"
     },
     {
       "id": "3",
-      "location": "New York",
+      "location": "FRANCE",
       "name": "Ahsan",
       "date": "26-jan-2022",
       "ratings": "5",
-      "title": "Video Post",
-      "cost": "10000",
+      "title": "The City of Love Love is the glue that binds",
+      "cost": "30000",
       "description": "We are use medication to help patients relax during dental procedures. ",
-      "img": "https://i.ibb.co/8BFRh6j/new-york.jpg"
+      "img": "https://i.ibb.co/wYzztcd/img-2.jpg"
     },
     {
       "id": "4",
-      "location": "New York",
+      "location": "DESTINATION",
       "name": "Ahsan",
       "date": "26-jan-2022",
       "ratings": "5",
-      "title": "Video Post",
+      "title": "Eve is back and all is right with the world",
       "cost": "10000",
       "description": "We are use medication to help patients relax during dental procedures. ",
-      "img": "https://i.ibb.co/8BFRh6j/new-york.jpg"
+      "img": "https://i.ibb.co/gZwXPkC/img-3.jpg"
     },
     {
       "id": "5",
-      "location": "New York",
+      "location": "FRANCE",
       "name": "Ahsan",
       "date": "26-jan-2022",
       "ratings": "5",
-      "title": "Video Post",
-      "cost": "10000",
+      "title": "Beach Photography with top super model",
+      "cost": "50000",
+      "description": "We are use medication to help patients relax during dental procedures. ",
+      "img": "https://i.ibb.co/qNtzyDG/img-5.jpg"
+    },
+    {
+      "id": "6",
+      "location": "FRANCE",
+      "name": "Ahsan",
+      "date": "26-jan-2022",
+      "ratings": "5",
+      "title": "A Travel Guide to Lake Huawai",
+      "cost": "60000",
       "description": "We are use medication to help patients relax during dental procedures. ",
       "img": "https://i.ibb.co/8BFRh6j/new-york.jpg"
     },
     {
-      "id": "6",
-      "location": "New York",
+      "id": "7",
+      "location": "FRANCE",
       "name": "Ahsan",
       "date": "26-jan-2022",
       "ratings": "5",
-      "title": "Video Post",
-      "cost": "10000",
+      "title": "La Plage Casadelmar",
+      "cost": "70000",
       "description": "We are use medication to help patients relax during dental procedures. ",
-      "img": "https://i.ibb.co/8BFRh6j/new-york.jpg"
+      "img": "https://i.ibb.co/Cmc4zjy/img-7.jpg"
+    },
+    {
+      "id": "8",
+      "location": "FRANCE",
+      "name": "Ahsan",
+      "date": "26-jan-2022",
+      "ratings": "5",
+      "title": "Gallery Post",
+      "cost": "80000",
+      "description": "We are use medication to help patients relax during dental procedures. ",
+      "img": "https://i.ibb.co/hFk4MNs/img-8.jpg"
     }
  
   ]

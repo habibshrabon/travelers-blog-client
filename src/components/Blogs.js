@@ -57,25 +57,25 @@ const Blogs = () => {
                   <ul className="cus_widget_categories">
                     <li>
                       <div className="flex items-center justify-between">
-                        <a href="#">Dental</a>
+                        <a href="#">Adventure </a>
                         <a href="#">(2)</a>
                       </div>
                     </li>
                     <li>
                       <div className="flex items-center justify-between">
-                        <a href="#">Hygiene</a>
+                        <a href="#">City</a>
                         <a href="#">(1)</a>
                       </div>
                     </li>
                     <li>
                       <div className="flex items-center justify-between">
-                        <a href="#">Implants</a>
+                        <a href="#">Destination </a>
                         <a href="#">(1)</a>
                       </div>
                     </li>
                     <li>
                       <div className="flex items-center justify-between">
-                        <a href="#">Technology</a>
+                        <a href="#">Mountain</a>
                         <a href="#">(2)</a>
                       </div>
                     </li>
@@ -123,9 +123,7 @@ const Blogs = () => {
                       <h3 className="mb-2 font-bold text-java-500">
                         Sarah Taylor
                       </h3>
-                      <span className="text-gray-600">
-                        Obstetrics &amp; Gynaecology
-                      </span>
+                      <span className="text-gray-600">Tour &amp; Travels</span>
                     </div>
                   </div>
                 </div>
