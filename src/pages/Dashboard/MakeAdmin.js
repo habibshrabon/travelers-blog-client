@@ -30,7 +30,7 @@ const MakeAdmin = () => {
       <div className="md:col-span-3 hidden md:block">
         <AdminSidebar />
       </div>
-      <div className="md:col-span-9 col-span-12">
+      <div className="md:col-span-9 col-span-12 mt-16">
         <h2>Make An Admin</h2>
         <form onSubmit={handleSubmit}>
           <input
@@ -40,7 +40,7 @@ const MakeAdmin = () => {
           />
           <button
             type="submit"
-            className=" bg-blue hover:bg-blue-600 text-white py-3 px-8 block mt-4"
+            className=" bg-yellow-500 rounded font-bold hover:bg-blue-600 py-3 px-8 block mt-4"
           >
             Add Admin
           </button>
