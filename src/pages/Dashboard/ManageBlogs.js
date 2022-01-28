@@ -25,6 +25,7 @@ const ManageBlogs = () => {
           setBlogs(remaining);
         }
       });
+    window.location.reload();
     alert("you have deleted a blog");
   };
   return (
