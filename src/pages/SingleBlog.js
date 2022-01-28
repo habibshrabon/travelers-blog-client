@@ -84,14 +84,14 @@ const SingleBlog = () => {
               </Link>
             </li>
           </ul>
-          <button className="py-3 px-8 font-bold rounded bg-blue-500 hover:bg-blue-600 text-white mt-4">
+          {/* <button className="py-3 px-8 font-bold rounded bg-blue-500 hover:bg-blue-600 text-white mt-4">
             Checkout
-          </button>
+          </button> */}
         </div>
         <div className="md:col-span-4 p-4 col-span-12">
           <div className="p-2 my-10 md:p-5 tab1">
-            <h5>Your Reviews</h5>
-            <div className="giveReview">
+            <h5>Leave a reply</h5>
+            <div className="giveReview pt-5">
               <form action="">
                 <div className="">
                   <div className="w-full div1">
@@ -123,7 +123,7 @@ const SingleBlog = () => {
                   className="py-3 px-8 font-bold rounded bg-blue-500 hover:bg-blue-600 text-white mt-4"
                   type="submit"
                 >
-                  Submit
+                  POST REVIEW
                 </button>
               </form>
             </div>
