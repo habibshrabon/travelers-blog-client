@@ -18,7 +18,6 @@ const AppRouter = () => {
     <div>
       <AuthProvider>
         <Router>
-          <Header />
           <Switch>
             <Route exact path="/">
               <Home />
@@ -48,7 +47,6 @@ const AppRouter = () => {
               <Login />
             </Route>
           </Switch>
-          <Footer />
         </Router>
       </AuthProvider>
     </div>

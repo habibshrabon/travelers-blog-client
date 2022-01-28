@@ -36,22 +36,16 @@ const MakeAdmin = () => {
           <input
             onBlur={handleOnBlur}
             type="email"
-            className="border border-java-500 rounded p-2 w-3/5 mt-4"
+            className="border border-blue-500 rounded p-2 w-3/5 mt-4"
           />
           <button
             type="submit"
-            className=" bg-java hover:bg-java-600 text-white py-3 px-8 block mt-4"
+            className=" bg-blue hover:bg-blue-600 text-white py-3 px-8 block mt-4"
           >
             Add Admin
           </button>
         </form>
       </div>
-      {/* <div
-        className="pt-4 col-span-7 add-product"
-        style={{ position: "absolute", right: "0", background: "white" }}
-      >
-       
-      </div> */}
     </div>
   );
 };

@@ -9,7 +9,7 @@ const AdminSidebar = () => {
     >
       <ul className="list-unstyled li-style">
         <Link style={{ textDecoration: "none" }} to="/">
-          <h2 className="glassy">Exploore</h2>
+          <h2 className="glassy">Travelers</h2>
         </Link>
         <li>
           <Link

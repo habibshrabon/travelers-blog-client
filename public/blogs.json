@@ -2,7 +2,7 @@
     {
       "id":"1",
       "location": "New York",
-      "name": "Ahsan",
+      "name": "Jhankar",
       "date": "26-jan-2022",
       "ratings": "5",
       "title": "travel with your partner is best thing in life",
@@ -13,7 +13,7 @@
     {
       "id": "2",
       "location": "New York",
-      "name": "Ahsan",
+      "name": "Hero",
       "date": "26-jan-2022",
       "ratings": "5",
       "title": "travel with your partner is best thing in life",
@@ -24,7 +24,7 @@
     {
       "id": "3",
       "location": "FRANCE",
-      "name": "Ahsan",
+      "name": "Shaily",
       "date": "26-jan-2022",
       "ratings": "5",
       "title": "The City of Love Love is the glue that binds",
@@ -35,7 +35,7 @@
     {
       "id": "4",
       "location": "DESTINATION",
-      "name": "Ahsan",
+      "name": "Shamoly",
       "date": "26-jan-2022",
       "ratings": "5",
       "title": "Eve is back and all is right with the world",
@@ -46,7 +46,7 @@
     {
       "id": "5",
       "location": "FRANCE",
-      "name": "Ahsan",
+      "name": "Ruposh",
       "date": "26-jan-2022",
       "ratings": "5",
       "title": "Beach Photography with top super model",
@@ -90,7 +90,7 @@
     {
       "id": "9",
       "location": "FRANCE",
-      "name": "Ahsan",
+      "name": "Niva",
       "date": "26-jan-2022",
       "ratings": "5",
       "title": "Don’t think only Live Your Own Story",
@@ -101,7 +101,7 @@
     {
       "id": "10",
       "location": "FRANCE",
-      "name": "Ahsan",
+      "name": "Nipu",
       "date": "26-jan-2022",
       "ratings": "5",
       "title": "Let’s Fly Away Dreams only last for a night",
@@ -112,7 +112,7 @@
     {
       "id": "11",
       "location": "FRANCE",
-      "name": "Ahsan",
+      "name": "Shrabon",
       "date": "26-jan-2022",
       "ratings": "5",
       "title": "My goal for this year to travel the world",
@@ -123,7 +123,7 @@
     {
       "id": "12",
       "location": "FRANCE",
-      "name": "Ahsan",
+      "name": "Sabbir",
       "date": "26-jan-2022",
       "ratings": "5",
       "title": "Love advice from experts the world",
@@ -134,7 +134,7 @@
     {
       "id": "13",
       "location": "FRANCE",
-      "name": "Ahsan",
+      "name": "Atik",
       "date": "26-jan-2022",
       "ratings": "5",
       "title": "Don’t think only Live Your Own Story",
@@ -145,7 +145,7 @@
     {
       "id": "14",
       "location": "FRANCE",
-      "name": "Ahsan",
+      "name": "Foysal",
       "date": "26-jan-2022",
       "ratings": "5",
       "title": "The travel mystery revealed world",
@@ -156,7 +156,7 @@
     {
       "id": "15",
       "location": "FRANCE",
-      "name": "Ahsan",
+      "name": "Sadia",
       "date": "26-jan-2022",
       "ratings": "5",
       "title": "Don’t think only Live Your Own Story",
@@ -167,7 +167,7 @@
     {
       "id": "16",
       "location": "FRANCE",
-      "name": "Ahsan",
+      "name": "Nipu",
       "date": "26-jan-2022",
       "ratings": "5",
       "title": "A Place where Start New Life with peace",
@@ -178,7 +178,7 @@
     {
       "id": "17",
       "location": "FRANCE",
-      "name": "Ahsan",
+      "name": "Shakib",
       "date": "26-jan-2022",
       "ratings": "5",
       "title": "The Surfing Man Will Blow Your Mind",
@@ -189,13 +189,35 @@
     {
       "id": "18",
       "location": "FRANCE",
+      "name": "Fahad",
+      "date": "26-jan-2022",
+      "ratings": "5",
+      "title": "Journeys Are Best Measured With Friends",
+      "cost": "180000",
+      "description": "I love to travel because it gives you to freedom to be yourself and it makes you fall in love with your life. join the something new to taste.",
+      "img": "https://i.ibb.co/S5BH5qF/img-18.jpg"
+    },
+    {
+      "id": "19",
+      "location": "BANGLADESH",
       "name": "Ahsan",
       "date": "26-jan-2022",
       "ratings": "5",
       "title": "Journeys Are Best Measured With Friends",
-      "cost": "80000",
+      "cost": "190000",
       "description": "I love to travel because it gives you to freedom to be yourself and it makes you fall in love with your life. join the something new to taste.",
-      "img": "https://i.ibb.co/S5BH5qF/img-18.jpg"
+      "img": "https://i.ibb.co/DbCf4zH/img-19.jpg"
+    },
+    {
+      "id": "20",
+      "location": "BOGURA",
+      "name": "Ahsan",
+      "date": "26-jan-2022",
+      "ratings": "5",
+      "title": "Journeys Are Best Measured With Friends",
+      "cost": "200000",
+      "description": "I love to travel because it gives you to freedom to be yourself and it makes you fall in love with your life. join the something new to taste.",
+      "img": "https://i.ibb.co/z7f8ZwW/img-20.jpg"
     }
  
   ]
