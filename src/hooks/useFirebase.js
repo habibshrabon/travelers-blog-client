@@ -35,7 +35,7 @@ const useFirebase = () => {
         const newUser = { email, displayName: name };
         setUser(newUser);
         //save user to database
-        // saveUser(email, name);
+        saveUser(email, name);
         // send name to firebase
         updateProfile(auth.currentUser, {
           displayName: name,
@@ -78,6 +78,18 @@ const useFirebase = () => {
       .catch((error) => {
         // An error happened.
       });
+  };
+
+  //save user info to database
+  const saveUser = (email, displayName) => {
+    const user = { email, displayName };
+    fetch("https://still-hollows-84383.herokuapp.com/users", {
+      method: "POST",
+      headers: {
+        "content-type": "application/json",
+      },
+      body: JSON.stringify(user),
+    }).then();
   };
 
   //onAuthChanged

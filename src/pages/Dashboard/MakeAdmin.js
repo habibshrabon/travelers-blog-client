@@ -9,7 +9,7 @@ const MakeAdmin = () => {
 
   const handleSubmit = (e) => {
     const user = { email };
-    fetch("https://fierce-sea-69745.herokuapp.com/users", {
+    fetch("https://still-hollows-84383.herokuapp.com/users", {
       method: "PUT",
       headers: {
         "content-type": "application/json",
@@ -22,7 +22,7 @@ const MakeAdmin = () => {
           console.log(data);
         }
       });
-
+    alert("Admin Role added");
     e.preventDefault();
   };
   return (

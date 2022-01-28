@@ -21,7 +21,7 @@ const Blogs = () => {
   const [blogs, setBlogs] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/blogs")
+    fetch("https://still-hollows-84383.herokuapp.com/blogs")
       .then((res) => res.json())
       .then((data) => setBlogs(data));
   }, []);
@@ -112,7 +112,10 @@ const Blogs = () => {
                 <div className="sidebar-blog mb-12">
                   <h3 className="sidebar-blog__title">Recent Posts</h3>
                   {blogs.slice(0, 4).map((blog) => (
-                    <div className="grid grid-cols-12 gap-4 mb-2 border-b border-b-gray-200">
+                    <div
+                      key={blog.id}
+                      className="grid grid-cols-12 gap-4 mb-2 border-b border-b-gray-200"
+                    >
                       <div className="col-span-3 ">
                         <img className="rounded" src={blog.img} />
                       </div>

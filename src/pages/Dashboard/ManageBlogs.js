@@ -8,10 +8,25 @@ const ManageBlogs = () => {
   const [blogs, setBlogs] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/blogs")
+    fetch("https://still-hollows-84383.herokuapp.com/blogs")
       .then((res) => res.json())
       .then((data) => setBlogs(data));
   }, []);
+
+  const handleDelete = (id) => {
+    const url = `https://still-hollows-84383.herokuapp.com/blogs/${id}`;
+    fetch(url, {
+      method: "DELETE",
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        if (data.deletedCount) {
+          const remaining = setBlogs.filter((event) => event._id !== id);
+          setBlogs(remaining);
+        }
+      });
+    alert("you have deleted a blog");
+  };
   return (
     <div className="dashboard-content">
       <div className="md:col-span-2 hidden md:block">
@@ -23,7 +38,10 @@ const ManageBlogs = () => {
         </h2>
         <div className="grid grid-cols-12 gap-4">
           {blogs.map((blog) => (
-            <div className="md:col-span-3 col-span-6 p-3 shadow-lg">
+            <div
+              key={blog.id}
+              className="md:col-span-3 col-span-6 p-3 shadow-lg"
+            >
               <img
                 src={blog.img}
                 alt=""
@@ -39,7 +57,10 @@ const ManageBlogs = () => {
                   <FiEdit className="text-4xl bg-blue-500 hover:bg-blue-600 p-2 rounded cursor-pointer" />
                 </li>
                 <li>
-                  <RiDeleteBin7Line className="text-4xl bg-blue-500 hover:bg-red-600 p-2 rounded cursor-pointer" />
+                  <RiDeleteBin7Line
+                    onClick={() => handleDelete(blog._id)}
+                    className="text-4xl bg-blue-500 hover:bg-red-600 p-2 rounded cursor-pointer"
+                  />
                 </li>
               </ul>
             </div>
