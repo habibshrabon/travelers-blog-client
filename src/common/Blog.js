@@ -13,7 +13,7 @@ const Blog = ({ blog }) => {
             </a>
           </div>
           <div className="services-content">
-            <p className="text-center bg-blue-100 mb-2">{location}</p>
+            <p className="text-center bg-blue-100 mb-2 font-bold">{location}</p>
             <h3>
               <a href={`singleBlog/${id}`}>{title}</a>
             </h3>

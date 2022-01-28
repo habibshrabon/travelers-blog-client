@@ -113,7 +113,7 @@ const Login = () => {
           <h5>OR</h5>
           <button
             onClick={handleGoogleLogin}
-            className="px-8 py-3 bg-blue-500 hover:bg-blue-500 text-white rounded"
+            className="mt-3 px-8 py-3 bg-yellow-500 hover:bg-blue-500 font-bold rounded"
           >
             Sign in with Google
           </button>
