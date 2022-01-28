@@ -26,7 +26,7 @@ const ManageBlogs = () => {
         }
       });
     window.location.reload();
-    alert("you have deleted a blog");
+    alert("You have deleted a blog");
   };
   return (
     <div className="dashboard-content">

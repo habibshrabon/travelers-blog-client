@@ -87,9 +87,6 @@ const SingleBlog = () => {
                 </Link>
               </li>
             </ul>
-            {/* <button className="py-3 px-8 font-bold rounded bg-blue-500 hover:bg-blue-600 text-white mt-4">
-            Checkout
-          </button> */}
           </div>
           <div className="md:col-span-4 p-4 col-span-12">
             <div className="p-2 my-10 md:p-5 tab1">

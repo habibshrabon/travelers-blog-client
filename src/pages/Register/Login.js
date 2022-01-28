@@ -10,7 +10,7 @@ const Login = () => {
 
   const location = useLocation();
   const history = useHistory();
-  const destination = location?.state?.from || "/";
+  const destination = location.state?.from || "/home";
   const handleGoogleLogin = () => {
     signInUsingGoogle().then((result) => {
       history.replace(destination);
@@ -61,7 +61,6 @@ const Login = () => {
                 {errors?.email?.message}
               </span>
             </label>
-
             <label>
               <span className="login__form__title">Password</span>
               <input
@@ -96,7 +95,7 @@ const Login = () => {
               <input
                 type="submit"
                 className="btn-brand text-white rounded bg-blue-600 mt-5"
-                value="Log in now"
+                value="LogIn Now"
               />
             </span>
           </form>
