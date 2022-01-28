@@ -1,0 +1,27 @@
+.admin-sidebar {
+  background-image: linear-gradient(40deg, #4d4545e5, #3aafbee3);
+  position: fixed;
+}
+
+.admin-sidebar li {
+  margin-bottom: 2em;
+}
+.admin-sidebar li:hover span {
+  display: inline-block;
+  transform: translate(5px);
+}
+.admin-sidebar svg {
+  margin-right: 5px;
+}
+.li-style li {
+  margin-bottom: 20px;
+}
+
+.glassy {
+  color: black;
+  margin-bottom: 20px;
+}
+
+.dashboard-content {
+  @apply grid grid-cols-12 gap-4;
+}

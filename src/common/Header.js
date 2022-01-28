@@ -102,7 +102,11 @@ const Header = () => {
                     </li>
                   </ul>
                 </li>
-
+                <li className="menu-item nav-item">
+                  <Link title="Dashboard" to="dashboard" className="nav-link">
+                    Dashboard
+                  </Link>
+                </li>
                 <li className="menu-item nav-item">
                   <Link title="Contact Us" to="#" className="nav-link">
                     Contact Us

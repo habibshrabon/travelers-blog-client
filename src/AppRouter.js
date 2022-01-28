@@ -3,6 +3,9 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Footer from "./common/Footer";
 import Header from "./common/Header";
 import AuthProvider from "./context/AuthProvider";
+import AdminSidebar from "./pages/AdminSidebar";
+import MakeAdmin from "./pages/Dashboard/MakeAdmin";
+import ManageBlogs from "./pages/Dashboard/ManageBlogs";
 import Home from "./pages/Home/Home";
 import PrivateRoute from "./pages/PrivateRoute/PrivateRoute";
 import Login from "./pages/Register/Login";
@@ -25,6 +28,15 @@ const AppRouter = () => {
             </Route>
             <Route path="/write">
               <Write />
+            </Route>
+            <Route path="/manageBlogs">
+              <ManageBlogs />
+            </Route>
+            <Route path="/makeAdmin">
+              <MakeAdmin />
+            </Route>
+            <Route path="/dashboard">
+              <AdminSidebar />
             </Route>
             <PrivateRoute path="/singleBlog/:id">
               <SingleBlog />

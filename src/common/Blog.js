@@ -13,11 +13,11 @@ const Blog = ({ blog }) => {
             </a>
           </div>
           <div className="services-content">
-            <h4 className="text-cente">{location}</h4>
+            <p className="text-center bg-blue-100 mb-2">{location}</p>
             <h3>
               <a href={`singleBlog/${id}`}>{title}</a>
             </h3>
-            <div className="text-justify">
+            <div className="text-justify py-2">
               <span>{date}</span> | <span>{name} </span>|{" "}
               <span>Ratings: {ratings}</span>
             </div>
