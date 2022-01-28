@@ -18,6 +18,9 @@ const ManageBlogs = () => {
         <AdminSidebar />
       </div>
       <div className="md:col-span-10 col-span-12 pr-3">
+        <h2 className="text-center my-4 text-blue-600">
+          <b>Manage Blogs Here</b>
+        </h2>
         <div className="grid grid-cols-12 gap-4">
           {blogs.map((blog) => (
             <div className="md:col-span-3 col-span-6 p-3 shadow-lg">
